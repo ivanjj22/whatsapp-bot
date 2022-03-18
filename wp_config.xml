@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>D:\Users\PC2\Documents\NetBeansProjects\JavaFXApplication1\dist\JavaFXApplication1.jar</jar>
+  <outfile>D:\Users\PC2\Documents\NetBeansProjects\JavaFXApplication1\dist\WAM.exe</outfile>
+  <errTitle>Java error</errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest>D:\Users\PC2\Documents\NetBeansProjects\JavaFXApplication1\wrapper.manifest</manifest>
+  <icon>D:\Users\PC2\Documents\NetBeansProjects\JavaFXApplication1\src\images\WAM_logo.ico</icon>
+  <singleInstance>
+    <mutexName>Muted wp</mutexName>
+    <windowTitle></windowTitle>
+  </singleInstance>
+  <jre>
+    <path></path>
+    <bundledJre64Bit>false</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion>1.8.0</minVersion>
+    <maxVersion>1.9.0</maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.0.1.0</fileVersion>
+    <txtFileVersion>beta</txtFileVersion>
+    <fileDescription>WAM exe</fileDescription>
+    <copyright>2019</copyright>
+    <productVersion>1.0.1.0</productVersion>
+    <txtProductVersion>beta</txtProductVersion>
+    <productName>WAM</productName>
+    <companyName>WAM</companyName>
+    <internalName>internal name WP</internalName>
+    <originalFilename>WAM.exe</originalFilename>
+    <trademarks></trademarks>
+    <language>CASTILIAN_SPANISH</language>
+  </versionInfo>
+  <messages>
+    <startupErr>Ha ocurrido un error inesperado al abrir la aplicación.</startupErr>
+    <bundledJreErr>This application was configured to use a bundled Java Runtime Environment but the runtime is missing or corrupted.</bundledJreErr>
+    <jreVersionErr>Esta aplicacion requiere tener instalado el JRE (Java Runtime Environment).</jreVersionErr>
+    <launcherErr>The registry refers to a nonexistent Java Runtime Environment installation or the runtime is corrupted.</launcherErr>
+    <instanceAlreadyExistsMsg>La aplicación ya ha sido ejecutada.</instanceAlreadyExistsMsg>
+  </messages>
+</launch4jConfig>

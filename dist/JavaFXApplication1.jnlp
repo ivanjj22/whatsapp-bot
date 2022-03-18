@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JavaFXApplication1.jnlp">
+  <information>
+    <title>JavaFXApplication1</title>
+    <vendor>PC2</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="JavaFXApplication1.jar" size="844695" download="eager" />
+    <jar href="lib\AnimateFX-1.2.0.jar" size="85823" download="eager" />
+    <jar href="lib\commons-codec-1.11.jar" size="335042" download="eager" />
+    <jar href="lib\commons-collections4-4.3.jar" size="753996" download="eager" />
+    <jar href="lib\commons-compress-1.18.jar" size="591748" download="eager" />
+    <jar href="lib\commons-io-2.4.jar" size="185140" download="eager" />
+    <jar href="lib\commons-lang3-3.9.jar" size="503880" download="eager" />
+    <jar href="lib\commons-logging-1.2.jar" size="61829" download="eager" />
+    <jar href="lib\controlsfx-8.40.15.jar" size="1402490" download="eager" />
+    <jar href="lib\fluent-hc-4.5.8.jar" size="31542" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\httpclient-4.5.8.jar" size="772386" download="eager" />
+    <jar href="lib\httpclient-cache-4.5.8.jar" size="161842" download="eager" />
+    <jar href="lib\httpclient-osgi-4.5.8.jar" size="1360615" download="eager" />
+    <jar href="lib\httpclient-win-4.5.8.jar" size="17847" download="eager" />
+    <jar href="lib\httpcore-4.4.11.jar" size="326874" download="eager" />
+    <jar href="lib\httpmime-4.5.8.jar" size="41787" download="eager" />
+    <jar href="lib\jfoenix-8.0.8.jar" size="2708772" download="eager" />
+    <jar href="lib\jna-4.5.2.jar" size="1484022" download="eager" />
+    <jar href="lib\jna-platform-4.5.2.jar" size="2327597" download="eager" />
+    <jar href="lib\json-20140107.jar" size="64952" download="eager" />
+    <jar href="lib\poi-4.1.0.jar" size="2754042" download="eager" />
+    <jar href="lib\poi-ooxml-4.1.0.jar" size="1793185" download="eager" />
+    <jar href="lib\poi-ooxml-schemas-4.1.0.jar" size="7784293" download="eager" />
+    <jar href="lib\poi-scratchpad-4.1.0.jar" size="1555170" download="eager" />
+    <jar href="lib\postgresql-42.2.5.jar" size="825943" download="eager" />
+    <jar href="lib\rollbar-api-1.3.1.jar" size="51349" download="eager" />
+    <jar href="lib\rollbar-java-1.3.1.jar" size="63753" download="eager" />
+    <jar href="lib\selenium-server-standalone-3.141.59.jar" size="10649948" download="eager" />
+    <jar href="lib\slf4j-api-1.7.25.jar" size="41203" download="eager" />
+    <jar href="lib\xmlbeans-3.1.0.jar" size="2579738" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="JavaFXApplication1" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="home.Main"  name="JavaFXApplication1" />
+  <update check="always"/>
+</jnlp>

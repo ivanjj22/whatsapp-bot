@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="pane_main" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+   <children>
+      <Pane layoutY="-6.0" prefHeight="161.0" prefWidth="900.0" style="-fx-background-color: #39A67F;">
+         <children>
+            <ImageView fitHeight="77.0" fitWidth="52.0" layoutX="23.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/WAM_logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="85.0" layoutY="39.0" style="-fx-font-weight: bold;" text="WA Manager" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="122.0" prefHeight="25.0" prefWidth="143.0" text="Conectado..." textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btn_salir" layoutX="771.0" layoutY="44.0" prefHeight="13.0" prefWidth="64.0" style="-fx-background-color: #ECF5F2;" text="Salir" textFill="#39a67f">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font></JFXButton>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="pane_home" layoutX="215.0" layoutY="112.0" prefHeight="436.0" prefWidth="660.0" style="-fx-background-color: #EBF5F1;">
+         <children>
+            <ImageView fitHeight="436.0" fitWidth="637.0" layoutX="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/WAM_fachada.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btn_home" layoutX="-5.0" layoutY="153.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="37.0" prefWidth="180.0" text="Inicio" textFill="#39a67f">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn_cuentas" graphicTextGap="5.0" layoutY="222.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="37.0" prefWidth="180.0" ripplerFill="#15d755" text="Cuentas" textFill="#39a67f">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn_mensajes" graphicTextGap="5.0" layoutY="259.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="37.0" prefWidth="180.0" text="Mensaje" textFill="#39a67f">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btn_masivos" layoutY="296.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="37.0" prefWidth="180.0" text="Masivos" textAlignment="CENTER" textFill="#39a67f">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <ImageView layoutX="45.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/homebtn.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="45.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/stat.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="45.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/task.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="45.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/team.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="pane_cuentas" layoutX="215.0" layoutY="112.0" prefHeight="436.0" prefWidth="660.0" style="-fx-background-color: #EBF5F1;">
+         <children>
+            <Label layoutX="28.0" layoutY="22.0" text="Cuentas WA asociadas" textFill="#39a67f">
+               <font>
+                  <Font name="Segoe UI Bold" size="17.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btn_nueva_cuenta" layoutX="565.0" layoutY="21.0" style="-fx-background-color: #39A67F; -fx-pref-height: 65px; -fx-pref-width: 65px; -fx-background-radius: 5em;" textFill="WHITE" />
+            <TableView fx:id="table_cuentas" layoutX="28.0" layoutY="51.0" prefHeight="200.0" prefWidth="300.0">
+              <columns>
+                <TableColumn fx:id="table_cuentas_column_cuenta" prefWidth="75.0" text="Numero" />
+                <TableColumn fx:id="table_cuentas_column_nombre" prefWidth="75.0" text="Nombre" />
+                  <TableColumn fx:id="table_cuentas_column_estado" prefWidth="75.0" text="Estado" />
+              </columns>
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Abrir" />
+                        <MenuItem mnemonicParsing="false" text="Eliminar" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane_mensajes" layoutX="215.0" layoutY="112.0" prefHeight="436.0" prefWidth="660.0" style="-fx-background-color: #EBF5F1;">
+         <children>
+            <Label layoutX="28.0" layoutY="22.0" text="Seleccione cuenta" textFill="#39a67f">
+               <font>
+                  <Font name="Segoe UI Bold" size="17.0" />
+               </font>
+            </Label>
+            <JFXListView fx:id="cuentas_list_mensajes" layoutX="28.0" layoutY="51.0" prefHeight="280.0" prefWidth="200.0" />
+            <JFXTextArea fx:id="mensaje_text" layoutX="243.0" layoutY="51.0" prefHeight="179.0" prefWidth="402.0" promptText="Ingrese mensaje" />
+            <JFXButton fx:id="btn_enviar_mensaje" layoutX="243.0" layoutY="275.0" style="-fx-background-color: #7a7a7a;" text="Enviar mensaje" textFill="WHITE" />
+            <JFXSpinner fx:id="spinner_enviar_mensaje" layoutX="280.0" layoutY="280.0" />
+         </children>
+      </AnchorPane>
+      <ImageView layoutX="45.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/conexion.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btn_conexion" graphicTextGap="5.0" layoutX="6.0" layoutY="186.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="37.0" prefWidth="180.0" ripplerFill="#15d755" text="Conexión" textFill="#39a67f">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <ImageView layoutX="45.0" layoutY="343.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/resultados.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btn_resultados" layoutX="6.0" layoutY="334.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="37.0" prefWidth="180.0" text="Resultados" textAlignment="CENTER" textFill="#39a67f">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXNodesList fx:id="nodesList" stylesheets="@../styling/jfoenix-components.css" />
+      <AnchorPane fx:id="pane_resultados" layoutX="215.0" layoutY="112.0" prefHeight="436.0" prefWidth="660.0" style="-fx-background-color: #EBF5F1;">
+         <children>
+            <Label layoutX="28.0" layoutY="22.0" text="Resultados de envíos" textFill="#39a67f">
+               <font>
+                  <Font name="Segoe UI Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="textarea_resultados" editable="false" layoutX="28.0" layoutY="53.0" prefHeight="373.0" prefWidth="607.0" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="pane_masivos" layoutX="215.0" layoutY="112.0" prefHeight="436.0" prefWidth="660.0" style="-fx-background-color: #EBF5F1;">
+         <children>
+            <Label layoutX="28.0" layoutY="22.0" text="Configuración de Envío Masivo " textFill="#39a67f">
+               <font>
+                  <Font name="Segoe UI Bold" size="17.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btn_enviar_mensajes_masivos" layoutX="29.0" layoutY="330.0" prefHeight="33.0" prefWidth="119.0" style="-fx-background-color: #39A67F;" text="Iniciar envíos" textFill="WHITE" />
+            
+            <Label layoutX="29.0" layoutY="182.0" text="Cantidad de WA por cuenta:" />
+            <Label layoutX="28.0" layoutY="230.0" text="Tiempo de espera entre mensaje:" />
+            
+            <Label layoutX="29.0" layoutY="69.0" text="Hora Inicio:" />
+            <Label layoutX="28.0" layoutY="101.0" text="Hora Pausa:" />
+			
+			
+            <JFXButton fx:id="btn_detener_mensajes_masivos" layoutX="181.0" layoutY="330.0" prefHeight="33.0" prefWidth="119.0" style="-fx-background-color: #39A67F;" text="Pausar envíos" textFill="WHITE" />
+            <Label layoutX="278.0" layoutY="103.0" text="(A esta hora se detiene)" />
+            <Label layoutX="28.0" layoutY="285.0" text="Definir límite de envíos:" />
+            <Label layoutX="370.0" layoutY="230.0" text="(segundos)" />
+            <Label layoutX="370.0" layoutY="182.0" text="mensajes" />
+            <Label layoutX="370.0" layoutY="285.0" text="(0 = ilimitados)" />
+			
+			
+			<Spinner fx:id="inp_intercambiar_wa" layoutX="250.0" layoutY="178.0" prefWidth="90.0">
+				<valueFactory>
+					<SpinnerValueFactory.IntegerSpinnerValueFactory max="99999999" min="1" />
+				</valueFactory>
+			</Spinner>
+
+			<Spinner fx:id="inp_tiempo_espera" layoutX="250.0" layoutY="226.0" prefWidth="90.0">
+				<valueFactory>
+					<SpinnerValueFactory.IntegerSpinnerValueFactory max="99999999" min="20" />
+				</valueFactory>
+			</Spinner>
+			
+			<Spinner fx:id="inp_limite_envios" layoutX="250.0" layoutY="280.0" prefWidth="90.0">
+				<valueFactory>
+					<SpinnerValueFactory.IntegerSpinnerValueFactory max="99999999" min="0" />
+				</valueFactory>
+			</Spinner>
+			
+			
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane_conexion" layoutX="215.0" layoutY="112.0" prefHeight="436.0" prefWidth="660.0" style="-fx-background-color: #EBF5F1;" stylesheets="@../styling/listview.css">
+         <children>
+            <Label layoutX="28.0" layoutY="22.0" text="Conexión" textFill="#39a67f">
+               <font>
+                  <Font name="Segoe UI Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="108.0" text="Mensajes programados:" textFill="#545050">
+               <font>
+                  <Font name="Segoe UI Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="313.0" text="Imágenes programadas:" textFill="#545050">
+               <font>
+                  <Font name="Segoe UI Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="378.0" text="Imágen primero" textFill="#545050">
+               <font>
+                  <Font name="Segoe UI Bold" size="17.0" />
+               </font>
+            </Label>
+            <JFXCheckBox fx:id="checkBox_imagen_primero" layoutX="175.0" layoutY="380.0" selected="true" />
+            <JFXButton fx:id="btn_nueva_imagen" layoutX="239.0" layoutY="313.0" style="-fx-background-color: #39A67F; -fx-pref-height: 100px; -fx-pref-width: 100px;" textFill="WHITE" />
+            <Label layoutX="28.0" layoutY="61.0" text="Importar números:" textFill="#545050">
+               <font>
+                  <Font name="Segoe UI Bold" size="17.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btn_importar_numeros" layoutX="233.0" layoutY="56.0" prefHeight="33.0" prefWidth="38.0" style="-fx-background-color: #39A67F;" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
